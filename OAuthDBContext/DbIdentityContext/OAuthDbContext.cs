@@ -14,6 +14,15 @@ namespace OAuthDBContext.DbIdentityContext
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            builder.T
+            builder.Entity<OAuthUser>().ToTable("User");
+            builder.Entity<OAuthRole>().ToTable("Role");
+            builder.Entity<IdentityUserRole<Guid>>().ToTable("UserRole");
+            builder.Entity<IdentityUserClaim<Guid>>().ToTable("UserClaim");
+            builder.Entity<IdentityUserToken<Guid>>().ToTable("UserToken");
+            builder.Entity<IdentityUserLogin<Guid>>().ToTable("UserLogin");
+            builder.Entity<IdentityRoleClaim<Guid>>().ToTable("RoleClaim");
+
             builder.Entity<OAuthUser>(entity => entity.Property(m => m.Id).HasMaxLength(12));
             builder.Entity<OAuthUser>(entity => entity.Property(m => m.NormalizedEmail).HasMaxLength(85));
             builder.Entity<OAuthUser>(entity => entity.Property(m => m.NormalizedUserName).HasMaxLength(85));

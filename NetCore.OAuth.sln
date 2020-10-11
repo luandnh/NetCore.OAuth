@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.OAuth", "NetCore.OA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthDBContext", "OAuthDBContext\OAuthDBContext.csproj", "{3F830005-F4D7-4511-8610-022B23E6C110}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthService", "OAuthService\OAuthService.csproj", "{FF5AC67C-EEF7-4C41-8209-D44AB6C2DD92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{3F830005-F4D7-4511-8610-022B23E6C110}.Release|x64.Build.0 = Release|Any CPU
 		{3F830005-F4D7-4511-8610-022B23E6C110}.Release|x86.ActiveCfg = Release|Any CPU
 		{3F830005-F4D7-4511-8610-022B23E6C110}.Release|x86.Build.0 = Release|Any CPU
+		{FF5AC67C-EEF7-4C41-8209-D44AB6C2DD92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF5AC67C-EEF7-4C41-8209-D44AB6C2DD92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF5AC67C-EEF7-4C41-8209-D44AB6C2DD92}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FF5AC67C-EEF7-4C41-8209-D44AB6C2DD92}.Debug|x64.Build.0 = Debug|Any CPU
+		{FF5AC67C-EEF7-4C41-8209-D44AB6C2DD92}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FF5AC67C-EEF7-4C41-8209-D44AB6C2DD92}.Debug|x86.Build.0 = Debug|Any CPU
+		{FF5AC67C-EEF7-4C41-8209-D44AB6C2DD92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF5AC67C-EEF7-4C41-8209-D44AB6C2DD92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF5AC67C-EEF7-4C41-8209-D44AB6C2DD92}.Release|x64.ActiveCfg = Release|Any CPU
+		{FF5AC67C-EEF7-4C41-8209-D44AB6C2DD92}.Release|x64.Build.0 = Release|Any CPU
+		{FF5AC67C-EEF7-4C41-8209-D44AB6C2DD92}.Release|x86.ActiveCfg = Release|Any CPU
+		{FF5AC67C-EEF7-4C41-8209-D44AB6C2DD92}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

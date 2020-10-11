@@ -31,6 +31,8 @@ This is service library base on repository pattern.
 #### Package:
 - AutoMapper
 - Newtonsoft.Json
+- MySql.Data.EntityFrameworkCore
+- Microsoft.EntityFrameworkCore.Design
 
 #### EF Core Command:
-- Scaffold DB: `dotnet ef dbcontext scaffold "server=localhost;port=3306;user=dbadmin;password=123456;database=db_oauth" MySql.Data.EntityFrameworkCore -o Models -f`
+- Scaffold DB: `dotnet ef dbcontext scaffold "server=localhost;port=3306;user=dbadmin;password=123456;database=db_oauth" MySql.Data.EntityFrameworkCore -o Models\Entities -f`
