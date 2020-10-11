@@ -20,7 +20,9 @@ This is library to create identity database.
 
 #### EF Core Command:
 - Add Migration : `dotnet ef migrations add InitialCreate`
+- Remove Migration : `dotnet ef migrations remove`
 - Update Database: `dotnet ef database update`
+- Revert Database: `dotnet ef database update 0`
 
 ## OAuthService
 This is service library base on repository pattern.

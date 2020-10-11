@@ -14,7 +14,6 @@ namespace OAuthDBContext.DbIdentityContext
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            builder.T
             builder.Entity<OAuthUser>().ToTable("User");
             builder.Entity<OAuthRole>().ToTable("Role");
             builder.Entity<IdentityUserRole<Guid>>().ToTable("UserRole");
