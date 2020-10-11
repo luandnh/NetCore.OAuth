@@ -1,7 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Identity;
 
-namespace OAuthService.Models
+namespace OAuthDBContext.Models
 {
     public class OAuthRole : IdentityRole<Guid>
     {

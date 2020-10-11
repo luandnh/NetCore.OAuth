@@ -2,17 +2,15 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using OAuthService.DbContext;
+using OAuthDBContext.DbIdentityContext;
 
-namespace OAuthService.Migrations
+namespace OAuthDBContext.Migrations
 {
     [DbContext(typeof(OAuthDbContext))]
-    [Migration("20201010161221_InitialCreate")]
-    partial class InitialCreate
+    partial class OAuthDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -133,7 +131,7 @@ namespace OAuthService.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("OAuthService.Models.OAuthRole", b =>
+            modelBuilder.Entity("OAuthDBContext.Models.OAuthRole", b =>
                 {
                     b.Property<byte[]>("Id")
                         .ValueGeneratedOnAdd()
@@ -167,7 +165,7 @@ namespace OAuthService.Migrations
                     b.ToTable("AspNetRoles");
                 });
 
-            modelBuilder.Entity("OAuthService.Models.OAuthUser", b =>
+            modelBuilder.Entity("OAuthDBContext.Models.OAuthUser", b =>
                 {
                     b.Property<byte[]>("Id")
                         .ValueGeneratedOnAdd()
@@ -235,7 +233,7 @@ namespace OAuthService.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
                 {
-                    b.HasOne("OAuthService.Models.OAuthRole", null)
+                    b.HasOne("OAuthDBContext.Models.OAuthRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -244,7 +242,7 @@ namespace OAuthService.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<System.Guid>", b =>
                 {
-                    b.HasOne("OAuthService.Models.OAuthUser", null)
+                    b.HasOne("OAuthDBContext.Models.OAuthUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -253,7 +251,7 @@ namespace OAuthService.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<System.Guid>", b =>
                 {
-                    b.HasOne("OAuthService.Models.OAuthUser", null)
+                    b.HasOne("OAuthDBContext.Models.OAuthUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -262,13 +260,13 @@ namespace OAuthService.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<System.Guid>", b =>
                 {
-                    b.HasOne("OAuthService.Models.OAuthRole", null)
+                    b.HasOne("OAuthDBContext.Models.OAuthRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OAuthService.Models.OAuthUser", null)
+                    b.HasOne("OAuthDBContext.Models.OAuthUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -277,7 +275,7 @@ namespace OAuthService.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>", b =>
                 {
-                    b.HasOne("OAuthService.Models.OAuthUser", null)
+                    b.HasOne("OAuthDBContext.Models.OAuthUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
-    <ProjectReference Include="..\OAuthService\OAuthService.csproj" />
+    <ProjectReference Include="..\OAuthDBContext\OAuthDBContext.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

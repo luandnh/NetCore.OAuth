@@ -2,7 +2,7 @@ using System;
 using Microsoft.AspNetCore.Identity;
 using Newtonsoft.Json;
 
-namespace OAuthService.Models
+namespace OAuthDBContext.Models
 {
     public class OAuthUser : IdentityUser<Guid>
     {

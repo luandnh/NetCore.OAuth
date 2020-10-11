@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-using OAuthService.Models;
+using OAuthDBContext.Models;
 
-namespace OAuthService.DbContext
+namespace OAuthDBContext.DbIdentityContext
 {
     public class OAuthDbContext : IdentityDbContext<OAuthUser, OAuthRole, Guid>
     {

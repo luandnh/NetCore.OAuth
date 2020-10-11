@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using MySql.Data.EntityFrameworkCore.Metadata;
 
-namespace OAuthService.Migrations
+namespace OAuthDBContext.Migrations
 {
     public partial class InitialCreate : Migration
     {

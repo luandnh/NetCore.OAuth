@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace OAuthService.Models
+namespace OAuthDBContext.Models
 {
     public class OAuthUserManager : UserManager<OAuthUser>
     {
